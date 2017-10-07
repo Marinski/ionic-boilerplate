@@ -1,0 +1,20 @@
+<ion-menu [content]="content">
+  <ion-header>
+
+    <ion-navbar color="secondary">
+      <ion-title>Menu</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+
+
+  <ion-content>
+    <ion-list>
+      <button ion-item menuClose>Home</button>
+      <button ion-item menuClose>About</button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

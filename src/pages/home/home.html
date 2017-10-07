@@ -1,14 +1,26 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+
+  <ion-navbar color="secondary">
+
+    <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+
+    <ion-title>Home</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+          <ion-icon name="settings"></ion-icon>
+        </button>
+    </ion-buttons>
+
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content >
+  <ion-list>
+    <ion-item text-wrap>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eius magni et repudiandae optio aliquid tempore repellendus veniam unde, aperiam consequatur, illum eum quaerat ut sint incidunt voluptas molestias. Libero.</ion-item>
+  </ion-list>
 </ion-content>
